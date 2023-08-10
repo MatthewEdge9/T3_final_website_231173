@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,700;1,300;1,700&family=Lato:wght@300;400&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,700;1,300;1,700&family=Lato:wght@300;400&family=Montserrat:wght@300;400;500&display=swap');
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 700;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+a:link{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:active{
+    text-decoration: underline;
+}
+
+body{
+    background-color: rgb(187, 224, 254);
+}
+
+.container{
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+.navbar .container{
+    justify-content: flex-start;
+}
+
+.full-height{
+    height: 100vh;
+}
+
+#logo-image{
+    height: 140px;
+    width: 196px;
+}
+
+.navbar{
+    background-color: rgb(173, 214, 250);
+    justify-content: center;
+}
+
+.nav-item{
+    padding-left: 5%;
+}
+
+.nav{
+    justify-self: center;
+    width: 30vw;
+}
+
+.hero-image{
+    height: 50vh;
+    position: relative;
+    top: -190px;
+}
+
+.carousel-control-prev{
+    top: auto;
+    right: auto;
+    left: 50px;
+    bottom: 49vh;
+    width: auto;
+    background-color: white; 
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.carousel-control-next{
+    top: auto;
+    left: auto;
+    right: 50px;
+    bottom: 49vh;
+    width: auto;
+    background-color: white;
+    padding: 12px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+}
+
+.home-btn{
+    background-color: #ffffff8e;
+    padding: 20px 35px 20px 35px;
+    border-radius: 40px;
+    margin-left: 30%;
+    margin-top: 50px;
+}
+
+.col-6 .card{
+    border-radius: 100px;
+    background: #F3F3F3;
+    text-align: center;
+    height: 420px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.card-img{
+    border-radius: 70px;
+    width: auto;
+    height: 300px;
+    margin: 30px 30px 10px 30px;
+    transition: all 1s cubic-bezier(.01,.54,.49,1);
+}
+
+.card:hover{
+    cursor: pointer;
+    background-color: rgb(235, 235, 235);
+}
+
+.card-img.small{
+    height:235px;
+}
+
+#container-page{
+    margin-top: 180px;
+}
+
+#descriptionText{
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0;
+    transition: all 1s linear;
+}
+
+#priceText{
+    opacity: 1;
+    transition: all 1s linear;
+}
+
+#trips-header{
+    text-align: center;
+}
+
+#descriptionText.clear{
+    opacity: 1;
+}
+
+#priceText.opaque{
+    opacity: 0;
+}

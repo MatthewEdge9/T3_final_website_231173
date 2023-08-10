@@ -49,7 +49,6 @@ $(document).ready(function(){
 
 
 
-
 // --------------------------------------------
 // load Trips
 
@@ -88,7 +87,7 @@ $("#tripsContainer").on ('click', '.card', function(){
 
   // resize image
   $(this).find(".card-img").toggleClass("small");
-  
+
   // text opacity
   $(this).find("#descriptionText").toggleClass("clear");
   $(this).find("#priceText").toggleClass("opaque");

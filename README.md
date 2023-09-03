@@ -1,4 +1,4 @@
-![voyager logo](/assets/Logo.png.png)
+![voyager logo](/assets/Logo.png)
 
 This is my third term interactive development final submission. We were tasked with creating a website for our own made up cruise liner brand. This entailed 3 pages: home, trips and checkout, along with other more detailed specifications of required features.
 
@@ -70,3 +70,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgements
 
 A big shout out to my lecturer Paul. A lot of the code used in this project was taken and modified from our practicals
+
+
+## signed plagerism document
+![doc](/assets/plagerism-doc.jpg)

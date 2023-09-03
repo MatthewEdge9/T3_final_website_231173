@@ -42,13 +42,47 @@ body{
     height: 100vh;
 }
 
-#logo-image{
-    height: 140px;
-    width: 196px;
+.logo{
+    background-image: url('../assets/Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 200px;
 }
 
+.logo:hover{
+-webkit-animation: scale-up-center 1s ease-in-out infinite alternate both;
+animation: scale-up-center 1s ease-in-out infinite alternate both;
+    background-image: url('../assets/Logo-hover.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(1.25);
+              transform: scale(1.25);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+      100% {
+        -webkit-transform: scale(1.25);
+                transform: scale(1.25);
+      }
+  }
+
+
 .navbar{
-    background-color: rgb(173, 214, 250);
+    color: rgb(18, 18, 18);
+    background-color: rgba(255, 255, 255, 0.944);
     justify-content: center;
 }
 
@@ -67,15 +101,39 @@ body{
     top: -190px;
 }
 
+#car-1{
+    background-image: url(/assets/header1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#car-2{
+    background-image: url(/assets/header2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+#car-3{
+    background-image: url(/assets/header3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+
 .carousel-control-prev{
     top: auto;
     right: auto;
     left: 50px;
     bottom: 49vh;
     width: auto;
-    background-color: white; 
+    background-color: rgb(255, 255, 255); 
     padding: 12px;
     border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
 }
 
 .carousel-control-next{
@@ -89,10 +147,28 @@ body{
     border-radius: 50%;
     border-style: solid;
     border-color: black;
+    border-width: 2px;
 }
 
 .home-btn{
-    background-color: #ffffff8e;
+    font-weight: bold;
+    background-color: #ffffff7a;
+    padding: 20px 35px 20px 35px;
+    border-radius: 40px;
+    margin-left: 30%;
+    margin-top: 50px;
+}
+
+#trip-btn{
+    opacity: 0;
+    font-weight: bold;
+    background-color: #ffffff7a;
+    padding: 10px 25px 10px 25px;
+    border-radius: 40px;
+}
+
+.home-btn:hover{
+    background-color: #f7f7f7;
     padding: 20px 35px 20px 35px;
     border-radius: 40px;
     margin-left: 30%;
@@ -103,15 +179,16 @@ body{
     border-radius: 100px;
     background: #F3F3F3;
     text-align: center;
-    height: 420px;
+    height: 500px;
     border: none;
     margin-bottom: 30px;
 }
 
 .card-img{
     border-radius: 70px;
+    margin-bottom: 15px;
     width: auto;
-    height: 300px;
+    height: 350px;
     margin: 30px 30px 10px 30px;
     transition: all 1s cubic-bezier(.01,.54,.49,1);
 }
@@ -139,9 +216,11 @@ body{
 #priceText{
     opacity: 1;
     transition: all 1s linear;
+    margin-top: 15px;
 }
 
 #trips-header{
+    margin-top: -70px;
     text-align: center;
 }
 
@@ -149,6 +228,84 @@ body{
     opacity: 1;
 }
 
+#trip-btn.clear{
+    opacity: 1;
+}
+
 #priceText.opaque{
     opacity: 0;
 }
+
+.mb-0{
+    text-align: center;
+}
+
+.card-body{
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+.footer{
+    height: 100px;
+    float: inline-end;
+}
+
+
+
+
+
+#checkout-heading{
+     margin-top: 100px;   
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  .remove-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+
+  .remove-button:hover {
+    background-color: #d32f2f;
+  }
+
+  .purchase-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .purchase-button:hover {
+    background-color: #45a049;
+  }
+
+  .message {
+    display: none;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+  }
+
